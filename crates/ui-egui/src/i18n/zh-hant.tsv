@@ -1745,13 +1745,13 @@
 	Split document…	分割文件…
 	Number pages…	編訂頁碼…
 	Keyboard shortcuts	鍵盤快速鍵
-	Join the ArtCraft Discord	加入 ArtCraft Discord
-	Join the ArtCraft community	加入 ArtCraft 社群
-	Get help, share feedback and follow development on Discord.	在 Discord 取得協助、提供意見並追蹤開發進度。
-	Join our Discord	加入 Discord 社群
-	PdfCraft web page	PdfCraft 網頁
-	PdfCraft on GitHub	GitHub 上的 PdfCraft
-	ArtCraft website	ArtCraft 網站
+	Contact Unigreen on LINE…	透過 LINE 聯絡 Unigreen…
+	Contact Unigreen on LINE (@unigreen.power)	透過 LINE 聯絡 Unigreen（@unigreen.power）
+	Contact Unigreen	聯絡 Unigreen
+	Get help and share feedback with Unigreen on LINE.	透過 LINE 向 Unigreen 取得協助、提供意見。
+	Unigreen PDF web page	Unigreen PDF 網頁
+	Unigreen PDF on GitHub	GitHub 上的 Unigreen PDF
+	Unigreen Website	Unigreen 網站
 	Check for updates…	尋找更新…
 	About Unigreen PDF	關於 Unigreen PDF
 	JavaScript console…	JavaScript 主控台…
@@ -1822,7 +1822,7 @@
 	JavaScript, e.g. getField("total").value	JavaScript，例如 getField("total").value
 	Font: Helvetica	字型：Helvetica
 	e.g. en-US	例如 en-US
-	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	算繪：hayro（初期實作） · 介面：egui · 圖示：Lucide（ISC） · 字型：Inter、JetBrains Mono、Dancing Script（OFL）
+	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Noto Sans Thai, Dancing Script (OFL)	算繪：hayro（初期實作） · 介面：egui · 圖示：Lucide（ISC） · 字型：Inter、JetBrains Mono、Noto Sans Thai、Dancing Script（OFL）
 	CheckBox	核取方塊
 	Radio	選項按鈕
 	PushButton	按鈕

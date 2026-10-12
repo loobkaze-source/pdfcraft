@@ -223,9 +223,10 @@ pub fn installed_font_definitions(cjk: CjkPreference) -> FontDefinitions {
 }
 
 /// The interface fonts: Inter (and JetBrains Mono for code) first, then egui's defaults, then
-/// the CJK, Arabic, Telugu, Hebrew and Thai faces of the optional craft-fonts build input as the
-/// last fallback in every family. Without craft-fonts there is no Japanese, Chinese, Arabic,
-/// Telugu, Hebrew or Thai face here.
+/// the bundled Noto Sans Thai ([`UI_THAI`], bold in the `semibold` family), then the CJK, Arabic,
+/// Telugu, Hebrew and Thai faces of the optional craft-fonts build input as the last fallback in
+/// every family. Without craft-fonts there is no Japanese, Chinese, Arabic, Telugu or Hebrew
+/// face here.
 pub fn font_definitions() -> FontDefinitions {
     font_definitions_for(false)
 }
@@ -246,6 +247,14 @@ pub fn font_definitions_for(prefer_hans: bool) -> FontDefinitions {
     add(&mut fonts, "JetBrainsMono", include_bytes!("../../../assets/fonts/JetBrainsMono-Regular.ttf"));
     fonts.families.entry(FontFamily::Proportional).or_default().insert(0, "Inter".to_owned());
     fonts.families.entry(FontFamily::Monospace).or_default().insert(0, "JetBrainsMono".to_owned());
+    // Noto Sans Thai: Thai labels (a Thai file name, a Thai document title) on every build. A
+    // fallback only, after the primary faces and egui's defaults and before the craft-fonts
+    // faces. Interface only: PDF text uses the document's own fonts.
+    add(&mut fonts, UI_THAI, include_bytes!("../../../assets/fonts/NotoSansThai-Regular.ttf"));
+    add(&mut fonts, UI_THAI_BOLD, include_bytes!("../../../assets/fonts/NotoSansThai-Bold.ttf"));
+    for family in [FontFamily::Proportional, FontFamily::Monospace] {
+        fonts.families.entry(family).or_default().push(UI_THAI.to_owned());
+    }
     // The same static bytes pdfcraft-fonts uses for Japanese/Chinese text in PDFs: one copy, not two.
     for face in pdfcraft_fonts::ui_cjk_fonts(prefer_hans) {
         let name = face.name();
@@ -281,10 +290,20 @@ pub fn font_definitions_for(prefer_hans: bool) -> FontDefinitions {
     for (fam, primary) in [("medium", "Inter-Medium"), ("semibold", "Inter-SemiBold")] {
         let mut stack = vec![primary.to_owned()];
         stack.extend(fallback.iter().cloned());
+        if fam == "semibold"
+            && let Some(at) = stack.iter().position(|n| n == UI_THAI)
+        {
+            stack.insert(at, UI_THAI_BOLD.to_owned());
+        }
         fonts.families.insert(FontFamily::Name(fam.into()), stack);
     }
     fonts
 }
+
+/// The bundled Thai interface face (Noto Sans Thai Regular), a fallback in every family.
+pub const UI_THAI: &str = "NotoSansThai";
+/// Noto Sans Thai Bold, ahead of [`UI_THAI`] in the `semibold` family.
+pub const UI_THAI_BOLD: &str = "NotoSansThai-Bold";
 
 pub fn regular(size: f32) -> FontId {
     FontId::proportional(size)

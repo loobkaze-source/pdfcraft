@@ -67,7 +67,6 @@
 	Side panels	Бүйірлік панельдер
 	Enable Acrobat JavaScript	Acrobat JavaScript-ті қосу
 	OK	ОК
-	Join our Discord	Discord-қа қосылыңыз
 	Close	Жабу
 	Next / previous match	Келесі / алдыңғы сәйкестік
 	Copy selected text	Таңдалған мәтінді көшіру
@@ -122,8 +121,8 @@
 	Current page — type a page number or label (such as iv) and press Enter	Ағымдағы бет — бет нөмірін немесе белгісін (мысалы, iv) теріңіз де, Enter пернесін басыңыз
 	Welcome to Unigreen PDF	Unigreen PDF-ке қош келдіңіз
 	An open-source PDF workbench — local, private, and scriptable.	Ашық бастапқы кодты PDF жұмыс орны — жергілікті, жеке әрі скрипттерді қолдайтын.
-	Join the ArtCraft community	ArtCraft қауымдастығына қосылыңыз
-	Get help, share feedback and follow development on Discord.	Көмек алыңыз, пікір бөлісіңіз және Discord-тағы әзірлеуді қадағалаңыз.
+	Contact Unigreen	Unigreen-мен байланысыңыз
+	Get help and share feedback with Unigreen on LINE.	LINE арқылы Unigreen-нен көмек алып, пікір бөлісіңіз.
 	Recommended tools	Ұсынылған құралдар
 	Use now	Дәл қазір пайдалану
 	Open file	Файлды ашу
@@ -263,10 +262,11 @@
 	Split document…	Құжатты бөлу…
 	Number pages…	Беттерді нөмірлеу…
 	Keyboard shortcuts	Пернетақта тіркесімдері
-	Join the ArtCraft Discord	ArtCraft Discord-ына қосылыңыз
-	PdfCraft web page	PdfCraft веб-сайты
-	PdfCraft on GitHub	GitHub-тағы PdfCraft
-	ArtCraft website	ArtCraft веб-сайты
+	Contact Unigreen on LINE…	Unigreen-мен LINE арқылы байланысу…
+	Contact Unigreen on LINE (@unigreen.power)	Unigreen-мен LINE арқылы байланысу (@unigreen.power)
+	Unigreen PDF web page	Unigreen PDF веб-беті
+	Unigreen PDF on GitHub	GitHub-тағы Unigreen PDF
+	Unigreen Website	Unigreen веб-сайты
 	Check for updates…	Жаңартуларды тексеру…
 	About Unigreen PDF	Unigreen PDF туралы
 	Export a PDF	PDF экспорттау
@@ -1749,7 +1749,7 @@
 	JavaScript, e.g. getField("total").value	JavaScript, мысалы getField("total").value
 	Font: Helvetica	Қаріп: Helvetica
 	e.g. en-US	мысалы: kk-KZ
-	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	Көрсету: hayro (бастапқы) · Интерфейс: egui · Белгішелер: Lucide (ISC) · Қаріптер: Inter, JetBrains Mono, Dancing Script (OFL)
+	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Noto Sans Thai, Dancing Script (OFL)	Көрсету: hayro (бастапқы) · Интерфейс: egui · Белгішелер: Lucide (ISC) · Қаріптер: Inter, JetBrains Mono, Noto Sans Thai, Dancing Script (OFL)
 	CheckBox	Құсбелгі
 	Radio	Радио түймесі
 	PushButton	Түйме

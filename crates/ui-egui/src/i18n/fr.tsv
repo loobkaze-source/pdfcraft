@@ -65,7 +65,6 @@
 	Flatten Fill & Sign when saving	Aplatir Remplir et signer à l'enregistrement
 	Text, marks and signatures become part of the page. Other comments stay editable.	Le texte, les marques et les signatures deviennent partie de la page. Les autres commentaires restent modifiables.
 	OK	OK
-	Join our Discord	Rejoindre notre Discord
 	Close	Fermer
 	Next / previous match	Correspondance suivante / précédente
 	Copy selected text	Copier le texte sélectionné
@@ -133,8 +132,8 @@
 	Current page — type a page number or label (such as iv) and press Enter	Page actuelle — saisissez un numéro ou une étiquette de page (comme iv) et appuyez sur Entrée
 	Welcome to Unigreen PDF	Bienvenue dans Unigreen PDF
 	An open-source PDF workbench — local, private, and scriptable.	Un atelier PDF open source — local, privé et automatisable.
-	Join the ArtCraft community	Rejoindre la communauté ArtCraft
-	Get help, share feedback and follow development on Discord.	Obtenez de l'aide, partagez vos retours et suivez le développement sur Discord.
+	Contact Unigreen	Contacter Unigreen
+	Get help and share feedback with Unigreen on LINE.	Obtenez de l'aide et partagez vos retours avec Unigreen sur LINE.
 	Recommended tools	Outils recommandés
 	Use now	Utiliser
 	Open file	Ouvrir un fichier
@@ -275,10 +274,11 @@
 	Split document…	Fractionner le document…
 	Number pages…	Numéroter les pages…
 	Keyboard shortcuts	Raccourcis clavier
-	Join the ArtCraft Discord	Rejoindre le Discord ArtCraft
-	PdfCraft web page	Page web de PdfCraft
-	PdfCraft on GitHub	PdfCraft sur GitHub
-	ArtCraft website	Site web d'ArtCraft
+	Contact Unigreen on LINE…	Contacter Unigreen sur LINE…
+	Contact Unigreen on LINE (@unigreen.power)	Contacter Unigreen sur LINE (@unigreen.power)
+	Unigreen PDF web page	Page web de Unigreen PDF
+	Unigreen PDF on GitHub	Unigreen PDF sur GitHub
+	Unigreen Website	Site web de Unigreen
 	Check for updates…	Rechercher des mises à jour…
 	About Unigreen PDF	À propos de Unigreen PDF
 	Export a PDF	Exporter un PDF
@@ -1750,7 +1750,7 @@
 	JavaScript, e.g. getField("total").value	JavaScript, p. ex. getField("total").value
 	Font: Helvetica	Police : Helvetica
 	e.g. en-US	p. ex. fr-FR
-	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	Rendu : hayro (amorçage) · Interface : egui · Icônes : Lucide (ISC) · Polices : Inter, JetBrains Mono, Dancing Script (OFL)
+	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Noto Sans Thai, Dancing Script (OFL)	Rendu : hayro (amorçage) · Interface : egui · Icônes : Lucide (ISC) · Polices : Inter, JetBrains Mono, Noto Sans Thai, Dancing Script (OFL)
 	CheckBox	Case à cocher
 	Radio	Bouton radio
 	PushButton	Bouton

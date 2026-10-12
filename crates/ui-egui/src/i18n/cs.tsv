@@ -112,10 +112,11 @@
 	Split document…	Rozdělit dokument…
 	Number pages…	Očíslovat stránky…
 	Keyboard shortcuts	Klávesové zkratky
-	Join the ArtCraft Discord	Připojit se ke komunitě ArtCraft na Discordu
-	PdfCraft web page	Webová stránka PdfCraft
-	PdfCraft on GitHub	PdfCraft na GitHubu
-	ArtCraft website	Web ArtCraft
+	Contact Unigreen on LINE…	Kontaktovat Unigreen na LINE…
+	Contact Unigreen on LINE (@unigreen.power)	Kontaktovat Unigreen na LINE (@unigreen.power)
+	Unigreen PDF web page	Webová stránka Unigreen PDF
+	Unigreen PDF on GitHub	Unigreen PDF na GitHubu
+	Unigreen Website	Web Unigreen
 	Check for updates…	Zkontrolovat aktualizace…
 	About Unigreen PDF	O aplikaci Unigreen PDF
 	Auto	Automaticky
@@ -218,7 +219,6 @@ key	Space	Mezerník
 	{folder} is already pinned to Home	Složka {folder} už je připnutá na úvodní obrazovce
 	You can pin up to {n} folders. Unpin one first.	Připnout lze nejvýše {n} složek. Nejdříve některou odepněte.
 	Pinned {folder} to Home	Složka {folder} je připnutá na úvodní obrazovce
-	Join our Discord	Připojit se k našemu Discordu
 	Close	Zavřít
 	Next / previous match	Další / předchozí shoda
 	Copy selected text	Kopírovat vybraný text
@@ -275,8 +275,8 @@ key	Space	Mezerník
 	Current page — type a page number or label (such as iv) and press Enter	Aktuální stránka — zadejte číslo nebo označení stránky (třeba iv) a stiskněte Enter
 	Welcome to Unigreen PDF	Vítá vás Unigreen PDF
 	An open-source PDF workbench — local, private, and scriptable.	Open-source dílna pro PDF — lokální, soukromá a skriptovatelná.
-	Join the ArtCraft community	Připojte se ke komunitě ArtCraft
-	Get help, share feedback and follow development on Discord.	Získejte pomoc, sdílejte zpětnou vazbu a sledujte vývoj na Discordu.
+	Contact Unigreen	Kontaktujte Unigreen
+	Get help and share feedback with Unigreen on LINE.	Získejte pomoc a sdílejte zpětnou vazbu s Unigreen na LINE.
 	Recommended tools	Doporučené nástroje
 	Use now	Použít
 	Open file	Otevřít soubor
@@ -1870,7 +1870,7 @@ key	Space	Mezerník
 	JavaScript, e.g. getField("total").value	JavaScript, např. getField("total").value
 	Font: Helvetica	Písmo: Helvetica
 	e.g. en-US	např. cs-CZ
-	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	Vykreslování: hayro (zaváděcí) · UI: egui · Ikony: Lucide (ISC) · Písma: Inter, JetBrains Mono, Dancing Script (OFL)
+	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Noto Sans Thai, Dancing Script (OFL)	Vykreslování: hayro (zaváděcí) · UI: egui · Ikony: Lucide (ISC) · Písma: Inter, JetBrains Mono, Noto Sans Thai, Dancing Script (OFL)
 	CheckBox	Zaškrtávací políčko
 	Radio	Přepínač
 	PushButton	Tlačítko

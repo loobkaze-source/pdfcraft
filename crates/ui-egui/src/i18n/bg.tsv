@@ -1791,13 +1791,13 @@
 	Split document…	Раздели документа…
 	Number pages…	Номерирай страниците…
 	Keyboard shortcuts	Клавишни комбинации
-	Join the ArtCraft Discord	Присъедини се към ArtCraft в Discord
-	Join the ArtCraft community	Присъедини се към общността на ArtCraft
-	Get help, share feedback and follow development on Discord.	Получете помощ, споделете мнение и следете разработката в Discord.
-	Join our Discord	Присъедини се към нашия Discord
-	PdfCraft web page	Уебстраница на PdfCraft
-	PdfCraft on GitHub	PdfCraft в GitHub
-	ArtCraft website	Уебсайт на ArtCraft
+	Contact Unigreen on LINE…	Свържете се с Unigreen в LINE…
+	Contact Unigreen on LINE (@unigreen.power)	Свържете се с Unigreen в LINE (@unigreen.power)
+	Contact Unigreen	Свържете се с Unigreen
+	Get help and share feedback with Unigreen on LINE.	Получете помощ и споделете мнение с Unigreen в LINE.
+	Unigreen PDF web page	Уебстраница на Unigreen PDF
+	Unigreen PDF on GitHub	Unigreen PDF в GitHub
+	Unigreen Website	Уебсайт на Unigreen
 	Check for updates…	Провери за актуализации…
 	About Unigreen PDF	За Unigreen PDF
 	JavaScript console…	JavaScript конзола…
@@ -1977,7 +1977,7 @@
 	Radio	Радиобутон
 	Remove redaction marks	Премахни маркировките за заличаване
 	Rename bookmark	Преименувай отметката
-	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	Изобразяване: hayro (bootstrap) · Интерфейс: egui · Икони: Lucide (ISC) · Шрифтове: Inter, JetBrains Mono, Dancing Script (OFL)
+	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Noto Sans Thai, Dancing Script (OFL)	Изобразяване: hayro (bootstrap) · Интерфейс: egui · Икони: Lucide (ISC) · Шрифтове: Inter, JetBrains Mono, Noto Sans Thai, Dancing Script (OFL)
 	Replace page	Замени страницата
 	Resize comment	Преоразмери коментара
 	Rotate image	Завърти изображението

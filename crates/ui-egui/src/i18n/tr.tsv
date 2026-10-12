@@ -56,7 +56,6 @@
 	Flatten Fill & Sign when saving	Kaydederken Doldur ve İmzala'yı düzleştir
 	Text, marks and signatures become part of the page. Other comments stay editable.	Metin, işaretler ve imzalar sayfanın bir parçası olur. Diğer yorumlar düzenlenebilir kalır.
 	OK	Tamam
-	Join our Discord	Discord'umuza katılın
 	Close	Kapat
 	Next / previous match	Sonraki / önceki eşleşme
 	Copy selected text	Seçilen metni kopyala
@@ -118,8 +117,8 @@
 	Current page — type a page number or label (such as iv) and press Enter	Geçerli sayfa — bir sayfa numarası veya etiketi (örneğin iv) yazıp Enter'a basın
 	Welcome to Unigreen PDF	Unigreen PDF'e Hoş Geldiniz
 	An open-source PDF workbench — local, private, and scriptable.	Açık kaynaklı bir PDF çalışma alanı — yerel, gizli ve komut dosyalarıyla yönetilebilir.
-	Join the ArtCraft community	ArtCraft topluluğuna katılın
-	Get help, share feedback and follow development on Discord.	Discord'da yardım alın, geri bildirim paylaşın ve geliştirmeyi takip edin.
+	Contact Unigreen	Unigreen ile iletişime geçin
+	Get help and share feedback with Unigreen on LINE.	LINE üzerinden Unigreen'den yardım alın ve geri bildirim paylaşın.
 	Recommended tools	Önerilen araçlar
 	Use now	Şimdi kullan
 	Open file	Dosya aç
@@ -260,10 +259,11 @@
 	Split document…	Belgeyi böl…
 	Number pages…	Sayfaları numaralandır…
 	Keyboard shortcuts	Klavye kısayolları
-	Join the ArtCraft Discord	ArtCraft Discord'una katıl
-	PdfCraft web page	PdfCraft web sayfası
-	PdfCraft on GitHub	GitHub'da PdfCraft
-	ArtCraft website	ArtCraft web sitesi
+	Contact Unigreen on LINE…	LINE üzerinden Unigreen ile iletişime geçin…
+	Contact Unigreen on LINE (@unigreen.power)	LINE üzerinden Unigreen ile iletişime geçin (@unigreen.power)
+	Unigreen PDF web page	Unigreen PDF web sayfası
+	Unigreen PDF on GitHub	GitHub'da Unigreen PDF
+	Unigreen Website	Unigreen web sitesi
 	Check for updates…	Güncellemeleri denetle…
 	About Unigreen PDF	Unigreen PDF hakkında
 	Export a PDF	PDF'i dışa aktar
@@ -1720,7 +1720,7 @@
 	JavaScript, e.g. getField("total").value	JavaScript, ör. getField("total").value
 	Font: Helvetica	Yazı Tipi: Helvetica
 	e.g. en-US	ör. tr-TR
-	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	Oluşturma: hayro (bootstrap) · Arayüz: egui · Simgeler: Lucide (ISC) · Yazı Tipleri: Inter, JetBrains Mono, Dancing Script (OFL)
+	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Noto Sans Thai, Dancing Script (OFL)	Oluşturma: hayro (bootstrap) · Arayüz: egui · Simgeler: Lucide (ISC) · Yazı Tipleri: Inter, JetBrains Mono, Noto Sans Thai, Dancing Script (OFL)
 	CheckBox	OnayKutusu
 	Radio	Radyo
 	PushButton	BasmaDüğmesi

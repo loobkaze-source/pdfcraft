@@ -29,8 +29,8 @@ pub fn show(app: &mut PdfCraftApp, ui: &mut egui::Ui) {
                     ui.set_width(ui.available_width());
                     ui.horizontal(|ui| {
                         ui.vertical(|ui| {
-                            ui.label(egui::RichText::new(tl!("Join the ArtCraft community")).font(theme::semibold(15.0)));
-                            ui.label(egui::RichText::new(tl!("Get help, share feedback and follow development on Discord.")).color(t.text_muted));
+                            ui.label(egui::RichText::new(tl!("Contact Unigreen")).font(theme::semibold(15.0)));
+                            ui.label(egui::RichText::new(tl!("Get help and share feedback with Unigreen on LINE.")).color(t.text_muted));
                         });
                     });
                     ui.add_space(8.0);

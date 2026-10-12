@@ -91,7 +91,6 @@
 	Side panels	Бічні панелі
 	Enable Acrobat JavaScript	Увімкнути Acrobat JavaScript
 	OK	OK
-	Join our Discord	Приєднатися до нашого Discord
 	Close	Закрити
 	Next / previous match	Наступний / попередній збіг
 	Copy selected text	Копіювати виділений текст
@@ -159,8 +158,8 @@
 	Current page — type a page number or label (such as iv) and press Enter	Поточна сторінка — введіть номер або позначку сторінки (наприклад iv) і натисніть Enter
 	Welcome to Unigreen PDF	Вітаємо в Unigreen PDF
 	An open-source PDF workbench — local, private, and scriptable.	Відкритий інструментарій для PDF — локальний, приватний і з підтримкою сценаріїв.
-	Join the ArtCraft community	Приєднатися до спільноти ArtCraft
-	Get help, share feedback and follow development on Discord.	Отримуйте допомогу, діліться відгуками й стежте за розробкою в Discord.
+	Contact Unigreen	Зв’язатися з Unigreen
+	Get help and share feedback with Unigreen on LINE.	Отримуйте допомогу й діліться відгуками з Unigreen у LINE.
 	Recommended tools	Рекомендовані інструменти
 	Use now	Використати зараз
 	Open file	Відкрити файл
@@ -301,10 +300,11 @@
 	Split document…	Розділити документ…
 	Number pages…	Пронумерувати сторінки…
 	Keyboard shortcuts	Клавіатурні скорочення
-	Join the ArtCraft Discord	Приєднатися до Discord ArtCraft
-	PdfCraft web page	Вебсторінка PdfCraft
-	PdfCraft on GitHub	PdfCraft на GitHub
-	ArtCraft website	Вебсайт ArtCraft
+	Contact Unigreen on LINE…	Зв’язатися з Unigreen у LINE…
+	Contact Unigreen on LINE (@unigreen.power)	Зв’язатися з Unigreen у LINE (@unigreen.power)
+	Unigreen PDF web page	Вебсторінка Unigreen PDF
+	Unigreen PDF on GitHub	Unigreen PDF на GitHub
+	Unigreen Website	Вебсайт Unigreen
 	Check for updates…	Перевірити оновлення…
 	About Unigreen PDF	Про Unigreen PDF
 	Export a PDF	Експортувати PDF
@@ -1818,7 +1818,7 @@
 	JavaScript, e.g. getField("total").value	JavaScript, наприклад getField("total").value
 	Font: Helvetica	Шрифт: Helvetica
 	e.g. en-US	наприклад uk-UA
-	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	Відтворення: hayro (початковий рушій) · Інтерфейс: egui · Піктограми: Lucide (ISC) · Шрифти: Inter, JetBrains Mono, Dancing Script (OFL)
+	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Noto Sans Thai, Dancing Script (OFL)	Відтворення: hayro (початковий рушій) · Інтерфейс: egui · Піктограми: Lucide (ISC) · Шрифти: Inter, JetBrains Mono, Noto Sans Thai, Dancing Script (OFL)
 	CheckBox	Прапорець
 	Radio	Перемикач
 	PushButton	Кнопка

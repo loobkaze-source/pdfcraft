@@ -65,7 +65,6 @@
 	Flatten Fill & Sign when saving	Ausfüllen und unterschreiben beim Speichern reduzieren
 	Text, marks and signatures become part of the page. Other comments stay editable.	Text, Markierungen und Unterschriften werden Teil der Seite. Andere Kommentare bleiben bearbeitbar.
 	OK	OK
-	Join our Discord	Unserem Discord beitreten
 	Close	Schließen
 	Next / previous match	Nächster / vorheriger Treffer
 	Copy selected text	Ausgewählten Text kopieren
@@ -133,8 +132,8 @@
 	Current page — type a page number or label (such as iv) and press Enter	Aktuelle Seite – gib eine Seitenzahl oder -beschriftung ein (z. B. iv) und drücke die Eingabetaste
 	Welcome to Unigreen PDF	Willkommen bei Unigreen PDF
 	An open-source PDF workbench — local, private, and scriptable.	Eine Open-Source-PDF-Werkbank – lokal, privat und skriptfähig.
-	Join the ArtCraft community	Tritt der ArtCraft-Community bei
-	Get help, share feedback and follow development on Discord.	Hol dir Hilfe, gib Feedback und verfolge die Entwicklung auf Discord.
+	Contact Unigreen	Kontakt zu Unigreen
+	Get help and share feedback with Unigreen on LINE.	Hol dir Hilfe und gib Unigreen Feedback über LINE.
 	Recommended tools	Empfohlene Werkzeuge
 	Use now	Jetzt verwenden
 	Open file	Datei öffnen
@@ -275,10 +274,11 @@
 	Split document…	Dokument teilen…
 	Number pages…	Seiten nummerieren…
 	Keyboard shortcuts	Tastenkürzel
-	Join the ArtCraft Discord	Dem ArtCraft-Discord beitreten
-	PdfCraft web page	PdfCraft-Webseite
-	PdfCraft on GitHub	PdfCraft auf GitHub
-	ArtCraft website	ArtCraft-Website
+	Contact Unigreen on LINE…	Unigreen über LINE kontaktieren…
+	Contact Unigreen on LINE (@unigreen.power)	Unigreen über LINE kontaktieren (@unigreen.power)
+	Unigreen PDF web page	Unigreen PDF-Webseite
+	Unigreen PDF on GitHub	Unigreen PDF auf GitHub
+	Unigreen Website	Unigreen-Website
 	Check for updates…	Nach Updates suchen…
 	About Unigreen PDF	Über Unigreen PDF
 	Export a PDF	PDF exportieren
@@ -1755,7 +1755,7 @@
 	JavaScript, e.g. getField("total").value	JavaScript, z. B. getField("total").value
 	Font: Helvetica	Schrift: Helvetica
 	e.g. en-US	z. B. de-DE
-	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	Darstellung: hayro (Bootstrap) · Oberfläche: egui · Symbole: Lucide (ISC) · Schriften: Inter, JetBrains Mono, Dancing Script (OFL)
+	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Noto Sans Thai, Dancing Script (OFL)	Darstellung: hayro (Bootstrap) · Oberfläche: egui · Symbole: Lucide (ISC) · Schriften: Inter, JetBrains Mono, Noto Sans Thai, Dancing Script (OFL)
 	CheckBox	Kontrollkästchen
 	Radio	Optionsfeld
 	PushButton	Schaltfläche

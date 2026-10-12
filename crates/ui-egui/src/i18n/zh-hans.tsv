@@ -1798,13 +1798,13 @@
 	Split document…	拆分文档…
 	Number pages…	页面编号…
 	Keyboard shortcuts	键盘快捷键
-	Join the ArtCraft Discord	加入 ArtCraft Discord
-	Join the ArtCraft community	加入 ArtCraft 社区
-	Get help, share feedback and follow development on Discord.	在 Discord 上获取帮助、分享反馈并关注开发动态。
-	Join our Discord	加入我们的 Discord
-	PdfCraft web page	PdfCraft 网页
-	PdfCraft on GitHub	GitHub 上的 PdfCraft
-	ArtCraft website	ArtCraft 官网
+	Contact Unigreen on LINE…	通过 LINE 联系 Unigreen…
+	Contact Unigreen on LINE (@unigreen.power)	通过 LINE 联系 Unigreen（@unigreen.power）
+	Contact Unigreen	联系 Unigreen
+	Get help and share feedback with Unigreen on LINE.	通过 LINE 向 Unigreen 获取帮助、分享反馈。
+	Unigreen PDF web page	Unigreen PDF 网页
+	Unigreen PDF on GitHub	GitHub 上的 Unigreen PDF
+	Unigreen Website	Unigreen 官网
 	Check for updates…	检查更新…
 	About Unigreen PDF	关于 Unigreen PDF
 	JavaScript console…	JavaScript 控制台…
@@ -1987,7 +1987,7 @@
 	Radio	单选按钮
 	Remove redaction marks	移除密文标记
 	Rename bookmark	重命名书签
-	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	渲染：hayro（初期实现） · 界面：egui · 图标：Lucide（ISC） · 字体：Inter、JetBrains Mono、Dancing Script（OFL）
+	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Noto Sans Thai, Dancing Script (OFL)	渲染：hayro（初期实现） · 界面：egui · 图标：Lucide（ISC） · 字体：Inter、JetBrains Mono、Noto Sans Thai、Dancing Script（OFL）
 	Replace page	替换页面
 	Resize comment	调整注释大小
 	Rotate image	旋转图像

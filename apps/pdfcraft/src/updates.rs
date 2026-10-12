@@ -4,7 +4,7 @@ use std::time::Duration;
 
 use pdfcraft_ui_egui::updates::{RELEASES_PAGE, Release};
 
-const LATEST: &str = "https://api.github.com/repos/storytold/pdfcraft/releases/latest";
+const LATEST: &str = "https://api.github.com/repos/loobkaze-source/pdfcraft/releases/latest";
 
 /// The latest release. The answer is untrusted: its size is capped, and only a page under
 /// [`RELEASES_PAGE`] is ever offered for download (anything else falls back to that list).
@@ -29,6 +29,10 @@ pub fn latest_release() -> Result<Release, String> {
     if status == 403 {
         let reset = response.headers().get("x-ratelimit-reset").and_then(|v| v.to_str().ok());
         return Err(rate_limited(reset, now_unix()));
+    }
+    // GitHub answers 404 while the repository has no published release yet: nothing newer.
+    if status == 404 {
+        return Ok(no_release_yet());
     }
     if !(200..300).contains(&status) {
         return Err(format!("couldn't reach GitHub (http status: {status})"));
@@ -69,6 +73,12 @@ fn rate_limited(reset: Option<&str>, now: u64) -> String {
     }
 }
 
+/// The answer when no release has been published yet: this version, so the dialog says it is up to
+/// date instead of reporting an error, and the releases page if anyone follows the link.
+fn no_release_yet() -> Release {
+    Release { version: concat!("v", env!("CARGO_PKG_VERSION")).into(), url: RELEASES_PAGE.into() }
+}
+
 fn parse(body: &str) -> Result<Release, String> {
     let v: serde_json::Value = serde_json::from_str(body).map_err(|e| format!("unreadable answer ({e})"))?;
     let version = v["tag_name"].as_str().filter(|t| !t.is_empty() && t.len() <= 64).ok_or("no release found")?.to_string();
@@ -86,14 +96,30 @@ mod tests {
 
     #[test]
     fn answers_are_read_and_only_our_release_pages_are_offered() {
-        let r = parse(r#"{"tag_name":"v0.2.0","html_url":"https://github.com/storytold/pdfcraft/releases/tag/v0.2.0"}"#).unwrap();
-        assert_eq!(r, Release { version: "v0.2.0".into(), url: "https://github.com/storytold/pdfcraft/releases/tag/v0.2.0".into() });
-        for elsewhere in ["https://example.com/pdfcraft.exe", "https://github.com/storytold/pdfcraft/releases.evil/x", "javascript:alert(1)"] {
+        assert_eq!(LATEST, "https://api.github.com/repos/loobkaze-source/pdfcraft/releases/latest");
+        assert_eq!(RELEASES_PAGE, "https://github.com/loobkaze-source/pdfcraft/releases");
+        let r = parse(r#"{"tag_name":"v0.2.0","html_url":"https://github.com/loobkaze-source/pdfcraft/releases/tag/v0.2.0"}"#).unwrap();
+        assert_eq!(r, Release { version: "v0.2.0".into(), url: "https://github.com/loobkaze-source/pdfcraft/releases/tag/v0.2.0".into() });
+        for elsewhere in [
+            "https://example.com/pdfcraft.exe",
+            "https://github.com/loobkaze-source/pdfcraft/releases.evil/x",
+            // Upstream's releases are not ours to offer.
+            "https://github.com/storytold/pdfcraft/releases/tag/v9.9.9",
+            "javascript:alert(1)",
+        ] {
             let r = parse(&format!(r#"{{"tag_name":"v9.9.9","html_url":"{elsewhere}"}}"#)).unwrap();
             assert_eq!(r.url, RELEASES_PAGE, "{elsewhere}");
         }
         assert!(parse(r#"{"message":"Not Found"}"#).is_err());
         assert!(parse("<html>").is_err());
+    }
+
+    /// No release published yet (GitHub's 404): reported as up to date, not as an error.
+    #[test]
+    fn no_release_yet_reads_as_up_to_date() {
+        let r = no_release_yet();
+        assert!(!pdfcraft_ui_egui::updates::is_newer(&r.version, env!("CARGO_PKG_VERSION")), "{r:?}");
+        assert_eq!(r.url, RELEASES_PAGE);
     }
 
     #[test]

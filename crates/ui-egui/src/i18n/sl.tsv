@@ -229,7 +229,7 @@
 	Archive documents	Arhiviraj dokumente
 	Area	Ploščina
 	Arrow	Puščica
-	ArtCraft website	Spletna stran ArtCraft
+	Unigreen Website	Spletna stran Unigreen
 	Ask about this document	Vprašaj o tem dokumentu
 	Asks GitHub for the latest release. Nothing is downloaded or installed automatically.	Vpraša GitHub za najnovejšo izdajo. Ničesar se ne prenese ali namesti samodejno.
 	Associated with content	Povezano z vsebino
@@ -856,7 +856,7 @@
 	Full screen mode	Celozaslonski način
 	General	Splošno
 	Geospatial location	Geoprostorska lokacija
-	Get help, share feedback and follow development on Discord.	Poiščite pomoč, delite povratne informacije in spremljajte razvoj na Discordu.
+	Get help and share feedback with Unigreen on LINE.	Poiščite pomoč in delite povratne informacije z Unigreen prek LINE.
 	Go to a page view	Pojdi na pogled strani
 	Go to page {p}	Pojdi na stran {p}
 	Go to page…	Pojdi na stran…
@@ -960,9 +960,9 @@
 	JavaScript console…	Konzola JavaScript…
 	JavaScript is turned off (Preferences ▸ JavaScript).	JavaScript je izklopljen (Nastavitve > JavaScript).
 	JavaScript, e.g. getField("total").value	JavaScript, npr. getField("total").value
-	Join our Discord	Discord kanal
-	Join the ArtCraft Discord	Pridružite se Discordu ArtCraft
-	Join the ArtCraft community	Pridružite se skupnosti ArtCraft
+	Contact Unigreen on LINE…	Stopite v stik z Unigreen prek LINE…
+	Contact Unigreen on LINE (@unigreen.power)	Stopite v stik z Unigreen prek LINE (@unigreen.power)
+	Contact Unigreen	Stopite v stik z Unigreen
 	July	Julij
 	June	Junij
 	Justify	Obojestransko poravnano
@@ -1293,8 +1293,8 @@
 	Patterns	Vzorci
 	Patterns (graphics objects)	Vzorci (grafični objekti)
 	Unigreen PDF didn't shut down normally. These documents had changes that were autosaved:	Unigreen PDF se ni zaprl običajno. Ti dokumenti so imeli samodejno shranjene spremembe:
-	PdfCraft on GitHub	PdfCraft na GitHubu
-	PdfCraft web page	Spletna stran PdfCraft
+	Unigreen PDF on GitHub	Unigreen PDF na GitHubu
+	Unigreen PDF web page	Spletna stran Unigreen PDF
 	Unigreen PDF works offline. No telemetry, no account, and no cloud processing unless you add a provider.	Unigreen PDF deluje brez povezave. Brez telemetrije, brez računa in brez obdelave v oblaku, razen če dodate ponudnika.
 	Unigreen PDF {c} is up to date.	Unigreen PDF {c} je posodobljen.
 	Unigreen PDF {v} is available.	Na voljo je Unigreen PDF {v}.
@@ -1440,7 +1440,7 @@
 	Removed {n} hidden items. Save to remove them from the file.	Odstranjenih skritih elementov: {n}. Shranite, da jih odstranite iz datoteke.
 	Rename	Preimenuj
 	Rename bookmark	Preimenuj zaznamek
-	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	Izris: hayro (bootstrap) · Vmesnik: egui · Ikone: Lucide (ISC) · Pisave: Inter, JetBrains Mono, Dancing Script (OFL)
+	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Noto Sans Thai, Dancing Script (OFL)	Izris: hayro (bootstrap) · Vmesnik: egui · Ikone: Lucide (ISC) · Pisave: Inter, JetBrains Mono, Noto Sans Thai, Dancing Script (OFL)
 	Reopen the files that were open when Unigreen PDF last closed	Ponovno odpri datoteke, ki so bile odprte ob zadnjem zaprtju Unigreen PDF
 	Repair log	Dnevnik popravil
 	Repairs	Popravila

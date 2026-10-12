@@ -8,6 +8,7 @@ const JAPANESE: &str = "日本語の文字";
 const CHINESE: &str = "简体中文欢迎";
 const ARABIC: &str = "واحد اثنين";
 const TELUGU: &str = "తెలుగు ఫైల్";
+const THAI: &str = "ไฟล์ภาษาไทย";
 
 fn families() -> Vec<FontId> {
     vec![FontId::proportional(13.0), FontId::monospace(13.0), theme::medium(13.0), theme::semibold(17.0)]
@@ -122,6 +123,32 @@ fn telugu_ui_text_uses_craft_fonts() {
     for (j, a) in joined.iter().zip(&apart) {
         assert!(j < a, "క్ష is one conjunct, narrower than క్‌ష: {j} vs {a}");
     }
+}
+
+/// The bundled Noto Sans Thai draws Thai in every family on every build: a fallback after the
+/// app's own font and egui's defaults, before any craft-fonts face, with its bold face first in
+/// the semibold family.
+#[test]
+fn thai_ui_text_uses_the_bundled_noto_sans_thai() {
+    let defs = theme::font_definitions();
+    let craft: Vec<String> = pdfcraft_fonts::CRAFT_FONTS.iter().map(|f| f.name()).collect();
+    for family in [FontFamily::Proportional, FontFamily::Monospace] {
+        let stack = &defs.families[&family];
+        let thai = stack.iter().position(|n| n == theme::UI_THAI).expect("Noto Sans Thai is a fallback");
+        let own = stack.iter().position(|n| n == "Inter" || n == "JetBrainsMono").expect("the app's own font");
+        assert!(own < thai, "{family:?}: {stack:?}");
+        assert!(stack[..thai].iter().all(|n| !craft.contains(n)), "{family:?}: {stack:?}");
+        assert!(!stack.iter().any(|n| n == theme::UI_THAI_BOLD), "{family:?}: {stack:?}");
+    }
+    let semibold = &defs.families[&FontFamily::Name("semibold".into())];
+    assert_eq!(semibold[0], "Inter-SemiBold");
+    let bold = semibold.iter().position(|n| n == theme::UI_THAI_BOLD).expect("bold Thai in semibold");
+    assert_eq!(semibold.get(bold + 1).map(String::as_str), Some(theme::UI_THAI), "{semibold:?}");
+    let mut fonts = Fonts::new(TextOptions::default(), defs);
+    for id in families() {
+        assert!(fonts.has_glyphs(&id, THAI), "{id:?} lacks {THAI}");
+    }
+    assert!(layout_widths(&mut fonts, THAI).iter().all(|w| w.is_finite() && *w > 13.0), "{THAI}");
 }
 
 /// On a machine with a suitable installed font, the installed definitions end every family

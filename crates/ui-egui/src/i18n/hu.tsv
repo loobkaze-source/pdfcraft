@@ -63,7 +63,6 @@
 	Side panels	Oldalsó panelek
 	Enable Acrobat JavaScript	Acrobat JavaScript engedélyezése
 	OK	OK
-	Join our Discord	Csatlakozás a Discordhoz
 	Close	Bezárás
 	Next / previous match	Következő / előző találat
 	Copy selected text	Kijelölt szöveg másolása
@@ -131,8 +130,8 @@
 	Current page — type a page number or label (such as iv) and press Enter	Aktuális oldal — írj be egy oldalszámot vagy címkét (például iv), majd nyomd meg az Entert
 	Welcome to Unigreen PDF	Üdvözöljük az Unigreen PDF-ben
 	An open-source PDF workbench — local, private, and scriptable.	Nyílt forráskódú PDF-munkapad — helyi, privát és parancsfájlokkal vezérelhető.
-	Join the ArtCraft community	Csatlakozz az ArtCraft közösséghez
-	Get help, share feedback and follow development on Discord.	Kérj segítséget, oszd meg a véleményed, és kövesd a fejlesztést a Discordon.
+	Contact Unigreen	Kapcsolat az Unigreennel
+	Get help and share feedback with Unigreen on LINE.	Kérj segítséget, és oszd meg a véleményed az Unigreennel LINE-on.
 	Recommended tools	Ajánlott eszközök
 	Use now	Használat most
 	Open file	Fájl megnyitása
@@ -273,10 +272,11 @@
 	Split document…	Dokumentum felosztása…
 	Number pages…	Oldalak számozása…
 	Keyboard shortcuts	Billentyűparancsok
-	Join the ArtCraft Discord	Csatlakozás az ArtCraft Discordhoz
-	PdfCraft web page	A PdfCraft weblapja
-	PdfCraft on GitHub	PdfCraft a GitHubon
-	ArtCraft website	Az ArtCraft webhelye
+	Contact Unigreen on LINE…	Kapcsolatfelvétel az Unigreennel LINE-on…
+	Contact Unigreen on LINE (@unigreen.power)	Kapcsolatfelvétel az Unigreennel LINE-on (@unigreen.power)
+	Unigreen PDF web page	Az Unigreen PDF weblapja
+	Unigreen PDF on GitHub	Unigreen PDF a GitHubon
+	Unigreen Website	Az Unigreen webhelye
 	Check for updates…	Frissítések keresése…
 	About Unigreen PDF	Az Unigreen PDF-ről
 	Export a PDF	PDF exportálása
@@ -1740,7 +1740,7 @@
 	JavaScript, e.g. getField("total").value	JavaScript, pl. getField("total").value
 	Font: Helvetica	Betűtípus: Helvetica
 	e.g. en-US	pl. hu-HU
-	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	Megjelenítés: hayro (kiindulás) · Felület: egui · Ikonok: Lucide (ISC) · Betűtípusok: Inter, JetBrains Mono, Dancing Script (OFL)
+	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Noto Sans Thai, Dancing Script (OFL)	Megjelenítés: hayro (kiindulás) · Felület: egui · Ikonok: Lucide (ISC) · Betűtípusok: Inter, JetBrains Mono, Noto Sans Thai, Dancing Script (OFL)
 	CheckBox	Jelölőnégyzet
 	Radio	Választógomb
 	PushButton	Nyomógomb

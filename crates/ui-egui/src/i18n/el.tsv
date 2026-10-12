@@ -77,7 +77,6 @@
 	Side panels	Πλευρικοί πίνακες
 	Enable Acrobat JavaScript	Ενεργοποίηση Acrobat JavaScript
 	OK	Εντάξει
-	Join our Discord	Ελάτε στο Discord μας
 	Close	Κλείσιμο
 	Next / previous match	Επόμενο / προηγούμενο αποτέλεσμα
 	Copy selected text	Αντιγραφή επιλεγμένου κειμένου
@@ -138,8 +137,8 @@
 	Previous page	Προηγούμενη σελίδα
 	Welcome to Unigreen PDF	Καλώς ορίσατε στο Unigreen PDF
 	An open-source PDF workbench — local, private, and scriptable.	Ένα εργαλείο PDF ανοιχτού κώδικα — τοπικό, ιδιωτικό και αυτοματοποιήσιμο.
-	Join the ArtCraft community	Γίνετε μέλος της κοινότητας ArtCraft
-	Get help, share feedback and follow development on Discord.	Βρείτε βοήθεια, μοιραστείτε σχόλια και παρακολουθήστε την ανάπτυξη στο Discord.
+	Contact Unigreen	Επικοινωνία με τη Unigreen
+	Get help and share feedback with Unigreen on LINE.	Βρείτε βοήθεια και μοιραστείτε σχόλια με τη Unigreen στο LINE.
 	Recommended tools	Προτεινόμενα εργαλεία
 	Use now	Χρήση τώρα
 	Open file	Άνοιγμα αρχείου
@@ -1264,7 +1263,7 @@
 	JavaScript, e.g. getField("total").value	JavaScript, π.χ. getField("total").value
 	Font: Helvetica	Γραμματοσειρά: Helvetica
 	e.g. en-US	π.χ. el-GR
-	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	Απόδοση: hayro (bootstrap) · Περιβάλλον: egui · Εικονίδια: Lucide (ISC) · Γραμματοσειρές: Inter, JetBrains Mono, Dancing Script (OFL)
+	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Noto Sans Thai, Dancing Script (OFL)	Απόδοση: hayro (bootstrap) · Περιβάλλον: egui · Εικονίδια: Lucide (ISC) · Γραμματοσειρές: Inter, JetBrains Mono, Noto Sans Thai, Dancing Script (OFL)
 	CheckBox	Πλαίσιο ελέγχου
 	Radio	Κουμπί επιλογής
 	PushButton	Κουμπί εντολής
@@ -1656,10 +1655,11 @@
 	Extract pages…	Εξαγωγή σελίδων…
 	Split document…	Διαχωρισμός εγγράφου…
 	Number pages…	Αρίθμηση σελίδων…
-	Join the ArtCraft Discord	Συμμετοχή στο Discord του ArtCraft
-	PdfCraft web page	Ιστότοπος του PdfCraft
-	PdfCraft on GitHub	PdfCraft στο GitHub
-	ArtCraft website	Ιστότοπος ArtCraft
+	Contact Unigreen on LINE…	Επικοινωνία με τη Unigreen στο LINE…
+	Contact Unigreen on LINE (@unigreen.power)	Επικοινωνία με τη Unigreen στο LINE (@unigreen.power)
+	Unigreen PDF web page	Ιστότοπος του Unigreen PDF
+	Unigreen PDF on GitHub	Unigreen PDF στο GitHub
+	Unigreen Website	Ιστότοπος Unigreen
 	Check for updates…	Έλεγχος για ενημερώσεις…
 	Export a PDF	Εξαγωγή PDF
 	Export to	Εξαγωγή σε

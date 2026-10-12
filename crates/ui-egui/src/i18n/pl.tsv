@@ -88,7 +88,6 @@
 	Side panels	Panele boczne
 	Enable Acrobat JavaScript	Włącz Acrobat JavaScript
 	OK	OK
-	Join our Discord	Dołącz do naszego Discorda
 	Close	Zamknij
 	Next / previous match	Następne / poprzednie dopasowanie
 	Copy selected text	Kopiuj zaznaczony tekst
@@ -156,8 +155,8 @@
 	Current page — type a page number or label (such as iv) and press Enter	Bieżąca strona — wpisz numer lub etykietę strony (np. iv) i naciśnij Enter
 	Welcome to Unigreen PDF	Witamy w Unigreen PDF
 	An open-source PDF workbench — local, private, and scriptable.	Otwarty zestaw narzędzi do PDF — lokalny, prywatny i obsługujący skrypty.
-	Join the ArtCraft community	Dołącz do społeczności ArtCraft
-	Get help, share feedback and follow development on Discord.	Uzyskaj pomoc, podziel się opinią i śledź rozwój na Discordzie.
+	Contact Unigreen	Skontaktuj się z Unigreen
+	Get help and share feedback with Unigreen on LINE.	Uzyskaj pomoc i podziel się opinią z Unigreen przez LINE.
 	Recommended tools	Polecane narzędzia
 	Use now	Użyj teraz
 	Open file	Otwórz plik
@@ -297,10 +296,11 @@
 	Split document…	Podziel dokument…
 	Number pages…	Ponumeruj strony…
 	Keyboard shortcuts	Skróty klawiaturowe
-	Join the ArtCraft Discord	Dołącz do Discorda ArtCraft
-	PdfCraft web page	Strona internetowa PdfCraft
-	PdfCraft on GitHub	PdfCraft na GitHubie
-	ArtCraft website	Strona internetowa ArtCraft
+	Contact Unigreen on LINE…	Skontaktuj się z Unigreen przez LINE…
+	Contact Unigreen on LINE (@unigreen.power)	Skontaktuj się z Unigreen przez LINE (@unigreen.power)
+	Unigreen PDF web page	Strona internetowa Unigreen PDF
+	Unigreen PDF on GitHub	Unigreen PDF na GitHubie
+	Unigreen Website	Strona internetowa Unigreen
 	Check for updates…	Sprawdź aktualizacje…
 	About Unigreen PDF	O Unigreen PDF
 	Export a PDF	Eksportuj PDF
@@ -1815,7 +1815,7 @@
 	JavaScript, e.g. getField("total").value	JavaScript, np. getField("total").value
 	Font: Helvetica	Czcionka: Helvetica
 	e.g. en-US	np. pl-PL
-	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	Renderowanie: hayro (wersja początkowa) · Interfejs: egui · Ikony: Lucide (ISC) · Czcionki: Inter, JetBrains Mono, Dancing Script (OFL)
+	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Noto Sans Thai, Dancing Script (OFL)	Renderowanie: hayro (wersja początkowa) · Interfejs: egui · Ikony: Lucide (ISC) · Czcionki: Inter, JetBrains Mono, Noto Sans Thai, Dancing Script (OFL)
 	CheckBox	Pole wyboru
 	Radio	Przycisk opcji
 	PushButton	Przycisk

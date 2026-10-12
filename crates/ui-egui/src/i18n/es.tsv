@@ -88,7 +88,6 @@
 	Flatten Fill & Sign when saving	Acoplar Rellenar y firmar al guardar
 	Text, marks and signatures become part of the page. Other comments stay editable.	El texto, las marcas y las firmas pasan a formar parte de la página. Los demás comentarios siguen siendo editables.
 	OK	Aceptar
-	Join our Discord	Únete a nuestro Discord
 	Close	Cerrar
 	Next / previous match	Coincidencia siguiente / anterior
 	Copy selected text	Copiar el texto seleccionado
@@ -156,8 +155,8 @@
 	Current page — type a page number or label (such as iv) and press Enter	Página actual: escribe un número o una etiqueta de página (por ejemplo, iv) y pulsa Intro
 	Welcome to Unigreen PDF	Te damos la bienvenida a Unigreen PDF
 	An open-source PDF workbench — local, private, and scriptable.	Un banco de trabajo PDF de código abierto: local, privado y automatizable.
-	Join the ArtCraft community	Únete a la comunidad de ArtCraft
-	Get help, share feedback and follow development on Discord.	Recibe ayuda, comparte tu opinión y sigue el desarrollo en Discord.
+	Contact Unigreen	Contacta con Unigreen
+	Get help and share feedback with Unigreen on LINE.	Recibe ayuda y comparte tu opinión con Unigreen por LINE.
 	Recommended tools	Herramientas recomendadas
 	Use now	Usar ahora
 	Open file	Abrir archivo
@@ -298,10 +297,11 @@
 	Split document…	Dividir documento…
 	Number pages…	Numerar páginas…
 	Keyboard shortcuts	Atajos de teclado
-	Join the ArtCraft Discord	Únete al Discord de ArtCraft
-	PdfCraft web page	Página web de PdfCraft
-	PdfCraft on GitHub	PdfCraft en GitHub
-	ArtCraft website	Sitio web de ArtCraft
+	Contact Unigreen on LINE…	Contactar con Unigreen por LINE…
+	Contact Unigreen on LINE (@unigreen.power)	Contactar con Unigreen por LINE (@unigreen.power)
+	Unigreen PDF web page	Página web de Unigreen PDF
+	Unigreen PDF on GitHub	Unigreen PDF en GitHub
+	Unigreen Website	Sitio web de Unigreen
 	Check for updates…	Buscar actualizaciones…
 	About Unigreen PDF	Acerca de Unigreen PDF
 	Export a PDF	Exportar un PDF
@@ -1835,7 +1835,7 @@ action wizard	Start	Iniciar
 	JavaScript, e.g. getField("total").value	JavaScript, p. ej., getField("total").value
 	Font: Helvetica	Fuente: Helvetica
 	e.g. en-US	p. ej., es-ES
-	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Dancing Script (OFL)	Renderizado: hayro (inicial) · Interfaz: egui · Iconos: Lucide (ISC) · Fuentes: Inter, JetBrains Mono, Dancing Script (OFL)
+	Rendering: hayro (bootstrap) · UI: egui · Icons: Lucide (ISC) · Fonts: Inter, JetBrains Mono, Noto Sans Thai, Dancing Script (OFL)	Renderizado: hayro (inicial) · Interfaz: egui · Iconos: Lucide (ISC) · Fuentes: Inter, JetBrains Mono, Noto Sans Thai, Dancing Script (OFL)
 	CheckBox	Casilla de verificación
 	Radio	Botón de opción
 	PushButton	Botón
