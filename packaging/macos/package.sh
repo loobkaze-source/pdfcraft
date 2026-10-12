@@ -158,7 +158,7 @@ hdiutil_retry() {
     sleep $((attempt * 10))
   done
 }
-hdiutil_retry create create -srcfolder "$STAGE" -volname "PdfCraft" -fs HFS+ -format UDZO -imagekey zlib-level=9 -ov "$DMG"
+hdiutil_retry create create -srcfolder "$STAGE" -volname "Unigreen PDF" -fs HFS+ -format UDZO -imagekey zlib-level=9 -ov "$DMG"
 sign "$DMG"
 codesign --verify --strict --verbose=2 "$DMG"
 # The app inside the image must still pass --strict, so a makehybrid-style regression can't ship.

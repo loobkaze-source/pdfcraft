@@ -42,8 +42,9 @@ pub const ALLOWED_LICENCES: &[&str] = &[
 pub const BRAND_LICENCE: &str = "LicenseRef-Storyteller-Trademark";
 
 /// Unigreen Power's trademarks (the Unigreen name and logo, and the app icons built from the
-/// mark) in the Unigreen PDF distribution: not open source either. Allowed only for entries under
-/// `assets/brand/` and `assets/app-icon/` (see NOTICE).
+/// mark, and the DMG window artwork) in the Unigreen PDF distribution: not open source either.
+/// Allowed only for entries under `assets/brand/`, `assets/app-icon/` and `packaging/macos/dmg/`
+/// (see NOTICE).
 pub const UNIGREEN_LICENCE: &str = "LicenseRef-Unigreen-Trademark";
 
 pub const ADOBE_DATA_ALLOWED: &[(&str, &str)] = &[("hayro-cmap", "assets/cmaps.brotli"), ("hayro-interpret", "src/font/generated/metrics.rs")];
@@ -241,7 +242,8 @@ pub fn check(root: &Path, m: &Manifest, repo_files: &[String], lock: &BTreeSet<(
             problems.push(format!("{}: listed twice", a.path));
         }
         let brand = (a.licence == BRAND_LICENCE && a.kind == "logo" && a.path.starts_with("docs/brand/"))
-            || (a.licence == UNIGREEN_LICENCE && (a.path.starts_with("assets/brand/") || a.path.starts_with("assets/app-icon/")));
+            || (a.licence == UNIGREEN_LICENCE
+                && (a.path.starts_with("assets/brand/") || a.path.starts_with("assets/app-icon/") || a.path.starts_with("packaging/macos/dmg/")));
         if !brand {
             licence_ok(&a.path, &a.licence, &mut problems);
         }
