@@ -59,3 +59,9 @@ dependencies change (plan/adr/0002, 0006).
 Vendored (vendor/, patched; see vendor/README.md):
 - hayro 0.7.1 — Apache-2.0 OR MIT, Copyright the hayro authors (licence files kept in vendor/hayro).
 - hayro-interpret 0.7.0 — Apache-2.0 OR MIT, Copyright the hayro authors (LICENSE-APACHE, LICENSE-MIT kept in vendor/hayro-interpret).
+
+Unigreen PDF
+
+Unigreen PDF is a modified version of PdfCraft distributed by Unigreen Power Co., Ltd. Modifications:
+product name, app icons, colour theme and packaging metadata. The Unigreen name and logo are
+trademarks of Unigreen Power Co., Ltd. and are not licensed under MIT or Apache-2.0.

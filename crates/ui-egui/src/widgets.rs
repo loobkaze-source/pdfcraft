@@ -129,7 +129,8 @@ pub fn pill_button(ui: &mut egui::Ui, label: &str, primary: bool) -> Response {
     let (rect, resp) = ui.allocate_exact_size(vec2(w + 26.0, 28.0), Sense::click());
     resp.widget_info(|| egui::WidgetInfo::labeled(egui::WidgetType::Button, ui.is_enabled(), label));
     let (fill, stroke, text) = if primary {
-        (if resp.hovered() { t.accent_text } else { t.accent }, Stroke::NONE, Color32::WHITE)
+        let fill = if resp.hovered() { t.accent_text } else { t.accent };
+        (fill, Stroke::NONE, theme::on_accent(fill))
     } else {
         (if resp.hovered() { t.hover } else { t.card }, Stroke::new(1.2, t.text_muted), t.text)
     };
@@ -396,23 +397,25 @@ pub fn progress_notice(app: &PdfCraftApp, ctx: &egui::Context) -> bool {
     cancel
 }
 
-/// The ArtCraft wordmark (Storyteller's brand, docs/brand/; not open source), sized to `height`.
-pub fn artcraft_logo(ui: &mut egui::Ui, height: f32) -> Response {
+/// The Unigreen wordmark (Unigreen Power Co., Ltd. trademark, assets/brand/; not open source),
+/// sized to `height` (the width follows its aspect ratio).
+pub fn unigreen_logo(ui: &mut egui::Ui, height: f32) -> Response {
     let dark = ui.visuals().dark_mode;
     let (uri, bytes): (&str, &'static [u8]) = if dark {
-        ("bytes://artcraft-logo-white.svg", include_bytes!("../../../docs/brand/artcraft-logo-white.svg"))
+        ("bytes://unigreen-logo-white.svg", include_bytes!("../../../assets/brand/unigreen-logo-white.svg"))
     } else {
-        ("bytes://artcraft-logo.svg", include_bytes!("../../../docs/brand/artcraft-logo.svg"))
+        ("bytes://unigreen-logo.svg", include_bytes!("../../../assets/brand/unigreen-logo.svg"))
     };
-    ui.add(egui::Image::from_bytes(uri, bytes).max_height(height).alt_text("ArtCraft"))
+    ui.add(egui::Image::from_bytes(uri, bytes).max_height(height).alt_text("Unigreen"))
 }
 
-/// The ArtCraft mark (brand blue, works on light and dark), `size` points square.
-pub fn artcraft_mark(ui: &mut egui::Ui, size: f32) -> Response {
+/// The Unigreen three-leaf mark (works on light and dark), `size` points tall (the width follows
+/// its aspect ratio).
+pub fn unigreen_mark(ui: &mut egui::Ui, size: f32) -> Response {
     ui.add(
-        egui::Image::from_bytes("bytes://artcraft-mark.svg", include_bytes!("../../../docs/brand/artcraft-mark.svg"))
-            .fit_to_exact_size(vec2(size, size))
-            .alt_text("ArtCraft"),
+        egui::Image::from_bytes("bytes://unigreen-mark.svg", include_bytes!("../../../assets/brand/unigreen-mark.svg"))
+            .max_height(size)
+            .alt_text("Unigreen"),
     )
 }
 
@@ -468,7 +471,8 @@ pub fn icon_pill(ui: &mut egui::Ui, icon: &str, label: &str, primary: bool) -> R
     let (rect, resp) = ui.allocate_exact_size(vec2(w + 46.0, 30.0), Sense::click());
     resp.widget_info(|| egui::WidgetInfo::labeled(egui::WidgetType::Button, ui.is_enabled(), label));
     let (fill, stroke, text) = if primary {
-        (if resp.hovered() { t.accent_text } else { t.accent }, Stroke::NONE, Color32::WHITE)
+        let fill = if resp.hovered() { t.accent_text } else { t.accent };
+        (fill, Stroke::NONE, theme::on_accent(fill))
     } else {
         (if resp.hovered() { t.hover } else { t.card }, Stroke::new(1.2, t.text_muted), t.text)
     };

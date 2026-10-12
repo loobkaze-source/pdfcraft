@@ -1,12 +1,15 @@
-<p align="center">
-  <a href="https://getartcraft.com/">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="docs/brand/artcraft-logo-white.svg">
-      <img alt="ArtCraft" src="docs/brand/artcraft-logo.svg" width="200">
-    </picture>
-  </a>
-</p>
+# Unigreen PDF
 
+Unigreen PDF is Unigreen Power's distribution of [PdfCraft](https://github.com/storytold/pdfcraft),
+an open-source PDF workbench: a clean-room reimplementation of Adobe Acrobat, rebuilt in pure Rust.
+Based on PdfCraft by the ArtCraft team.
+
+> **Upstream:** everything below this note is PdfCraft's own README, kept unchanged apart from
+> the removal of the ArtCraft logo images (the ArtCraft brand licence requires modified versions
+> to remove them). Unigreen PDF changes only the product name, app icons, colour theme and
+> packaging metadata; see [NOTICE](NOTICE).
+
+---
 
 <h1 align="center">PdfCraft</h1>
 
@@ -557,7 +560,6 @@ Forks and modified versions must remove them.
 <sub>Adobe, Photoshop, Illustrator, Premiere Pro, Lightroom, Acrobat, After Effects and InDesign are trademarks or registered trademarks of Adobe Inc. in the United States and/or other countries. PdfCraft is an independent, open-source project and is not affiliated with, sponsored by or endorsed by Adobe Inc.; these names are used only to describe the workflows it is compatible with.</sub>
 
 <p align="center">
-  <a href="https://getartcraft.com/"><img alt="ArtCraft" src="docs/brand/artcraft-mark.svg" width="28"></a><br>
   <sub>Made by the <a href="https://getartcraft.com/">ArtCraft</a> team and community.</sub>
 </p>
 

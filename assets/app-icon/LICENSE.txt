@@ -1,12 +1,9 @@
-PdfCraft app icon (pdfcraft.svg, pdfcraft-small.svg and every file derived from them in this
+Unigreen PDF app icon (pdfcraft.svg, pdfcraft-small.svg and every file derived from them in this
 directory: pdfcraft-1024.png, pdfcraft.icns, pdfcraft.ico, hicolor/).
 
-Original artwork made for this project by the project owner, drawn in ArtCraft and vectorised for
-PdfCraft (no third-party material). Licensed like the rest of PdfCraft, under either of
+The Unigreen three-leaf mark on a Unigreen dark tile with the app label, made by Unigreen Power
+Co., Ltd. for Unigreen PDF, its distribution of PdfCraft. It replaces upstream PdfCraft's icon.
 
-  * Apache License, Version 2.0 (https://www.apache.org/licenses/LICENSE-2.0)
-  * MIT license (https://opensource.org/licenses/MIT)
-
-at your option.
-
-Regenerate the derived files with packaging/icons.sh.
+The Unigreen name and logo are trademarks of Unigreen Power Co., Ltd. They are not licensed under
+the MIT License or the Apache License, Version 2.0 that cover the rest of this repository (see
+NOTICE).

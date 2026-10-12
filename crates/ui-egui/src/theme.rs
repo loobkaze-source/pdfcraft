@@ -84,36 +84,36 @@ impl Tokens {
                 icon: Color32::from_rgb(0x44, 0x44, 0x4B),
                 hover: Color32::from_rgb(0xF0, 0xF0, 0xF3),
                 pressed: Color32::from_rgb(0xE4, 0xE4, 0xE9),
-                selected: Color32::from_rgb(0xE6, 0xEE, 0xFD),
-                accent: Color32::from_rgb(0x1B, 0x63, 0xE0),
-                accent_text: Color32::from_rgb(0x17, 0x55, 0xC4),
-                accent_soft: Color32::from_rgb(0xE3, 0xEC, 0xFD),
+                selected: Color32::from_rgb(0xE1, 0xF5, 0xEC),
+                accent: Color32::from_rgb(16, 150, 105),
+                accent_text: Color32::from_rgb(12, 115, 80),
+                accent_soft: Color32::from_rgb(0xDD, 0xF4, 0xEA),
                 field: Color32::from_rgb(0xFF, 0xFF, 0xFF),
-                badge_new: Color32::from_rgb(0x1B, 0x63, 0xE0),
+                badge_new: Color32::from_rgb(16, 150, 105),
                 page_shadow: Color32::from_black_alpha(34),
                 radius: 6,
             },
             ThemeKind::Dark => Self {
                 kind,
-                titlebar: Color32::from_rgb(0x1B, 0x1B, 0x1E),
-                chrome: Color32::from_rgb(0x26, 0x26, 0x2A),
-                panel: Color32::from_rgb(0x26, 0x26, 0x2A),
-                pasteboard: Color32::from_rgb(0x19, 0x19, 0x1C),
-                card: Color32::from_rgb(0x2E, 0x2E, 0x33),
-                border: Color32::from_rgb(0x3C, 0x3C, 0x43),
-                divider: Color32::from_rgb(0x33, 0x33, 0x39),
-                text: Color32::from_rgb(0xEC, 0xEC, 0xEF),
-                text_muted: Color32::from_rgb(0xAE, 0xAE, 0xB6),
-                text_faint: Color32::from_rgb(0x97, 0x97, 0x9E),
-                icon: Color32::from_rgb(0xD4, 0xD4, 0xDA),
-                hover: Color32::from_rgb(0x34, 0x34, 0x3A),
-                pressed: Color32::from_rgb(0x3E, 0x3E, 0x45),
-                selected: Color32::from_rgb(0x23, 0x3A, 0x63),
-                accent: Color32::from_rgb(0x4B, 0x8B, 0xF5),
-                accent_text: Color32::from_rgb(0x8C, 0xB6, 0xFA),
-                accent_soft: Color32::from_rgb(0x24, 0x36, 0x57),
-                field: Color32::from_rgb(0x1E, 0x1E, 0x22),
-                badge_new: Color32::from_rgb(0x3D, 0x7D, 0xEE),
+                titlebar: Color32::from_rgb(0x13, 0x26, 0x1A),
+                chrome: Color32::from_rgb(0x1B, 0x35, 0x25),
+                panel: Color32::from_rgb(0x1B, 0x35, 0x25),
+                pasteboard: Color32::from_rgb(0x12, 0x23, 0x18),
+                card: Color32::from_rgb(0x22, 0x3F, 0x2D),
+                border: Color32::from_rgb(0x2E, 0x51, 0x3B),
+                divider: Color32::from_rgb(0x26, 0x46, 0x32),
+                text: Color32::from_rgb(0xED, 0xEE, 0xED),
+                text_muted: Color32::from_rgb(0xAC, 0xB8, 0xB0),
+                text_faint: Color32::from_rgb(0x98, 0xAC, 0x9F),
+                icon: Color32::from_rgb(0xD5, 0xD9, 0xD6),
+                hover: Color32::from_rgb(0x27, 0x47, 0x33),
+                pressed: Color32::from_rgb(0x30, 0x53, 0x3D),
+                selected: Color32::from_rgb(0x1D, 0x4E, 0x3C),
+                accent: Color32::from_rgb(52, 211, 153),
+                accent_text: Color32::from_rgb(0x6E, 0xE7, 0xB7),
+                accent_soft: Color32::from_rgb(0x1E, 0x45, 0x37),
+                field: Color32::from_rgb(0x15, 0x2B, 0x1E),
+                badge_new: Color32::from_rgb(26, 140, 100),
                 page_shadow: Color32::from_black_alpha(120),
                 radius: 6,
             },
@@ -127,6 +127,25 @@ impl Tokens {
     pub fn dark(&self) -> bool {
         self.kind == ThemeKind::Dark
     }
+}
+
+/// Unigreen dark (#0d1a12): text and glyphs on the mint accent.
+pub const UNIGREEN_DARK: Color32 = Color32::from_rgb(0x0D, 0x1A, 0x12);
+
+/// The colour for text or glyphs drawn on a filled `fill` (the accent, a badge): Unigreen dark or
+/// white, whichever contrasts more, so labels on the mint accent stay readable.
+pub fn on_accent(fill: Color32) -> Color32 {
+    let lum = |c: Color32| {
+        let lin = |v: u8| {
+            let s = f32::from(v) / 255.0;
+            if s <= 0.04045 { s / 12.92 } else { ((s + 0.055) / 1.055).powf(2.4) }
+        };
+        0.2126 * lin(c.r()) + 0.7152 * lin(c.g()) + 0.0722 * lin(c.b())
+    };
+    let l = lum(fill) + 0.05;
+    let on_dark = l / (lum(UNIGREEN_DARK) + 0.05);
+    let on_white = (lum(Color32::WHITE) + 0.05) / l;
+    if on_dark >= on_white { UNIGREEN_DARK } else { Color32::WHITE }
 }
 
 pub fn install_fonts(ctx: &egui::Context) {

@@ -41,6 +41,11 @@ pub const ALLOWED_LICENCES: &[&str] = &[
 /// (AGENTS.md §1.2).
 pub const BRAND_LICENCE: &str = "LicenseRef-Storyteller-Trademark";
 
+/// Unigreen Power's trademarks (the Unigreen name and logo, and the app icons built from the
+/// mark) in the Unigreen PDF distribution: not open source either. Allowed only for entries under
+/// `assets/brand/` and `assets/app-icon/` (see NOTICE).
+pub const UNIGREEN_LICENCE: &str = "LicenseRef-Unigreen-Trademark";
+
 pub const ADOBE_DATA_ALLOWED: &[(&str, &str)] = &[("hayro-cmap", "assets/cmaps.brotli"), ("hayro-interpret", "src/font/generated/metrics.rs")];
 
 /// File extensions that count as assets wherever they appear in the repository.
@@ -235,7 +240,8 @@ pub fn check(root: &Path, m: &Manifest, repo_files: &[String], lock: &BTreeSet<(
         if !seen.insert(a.path.clone()) {
             problems.push(format!("{}: listed twice", a.path));
         }
-        let brand = a.licence == BRAND_LICENCE && a.kind == "logo" && a.path.starts_with("docs/brand/");
+        let brand = (a.licence == BRAND_LICENCE && a.kind == "logo" && a.path.starts_with("docs/brand/"))
+            || (a.licence == UNIGREEN_LICENCE && (a.path.starts_with("assets/brand/") || a.path.starts_with("assets/app-icon/")));
         if !brand {
             licence_ok(&a.path, &a.licence, &mut problems);
         }

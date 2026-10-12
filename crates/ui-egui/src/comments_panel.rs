@@ -300,7 +300,7 @@ fn card(
                     }
                     ui.horizontal(|ui| {
                         if ui
-                            .add(egui::Button::new(egui::RichText::new(tl!("Save")).color(Color32::WHITE)).fill(t.accent).corner_radius(12))
+                            .add(egui::Button::new(egui::RichText::new(tl!("Save")).color(theme::on_accent(t.accent))).fill(t.accent).corner_radius(12))
                             .clicked()
                             && let Some((page, index, text)) = view.comments.editing.take()
                         {

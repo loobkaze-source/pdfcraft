@@ -42,7 +42,7 @@ pub struct Job {
 
 impl Default for Job {
     fn default() -> Self {
-        Job { printer: None, copies: 1, collate: true, duplex: Duplex::Off, grayscale: false, title: "PdfCraft".into(), options: Vec::new() }
+        Job { printer: None, copies: 1, collate: true, duplex: Duplex::Off, grayscale: false, title: "Unigreen PDF".into(), options: Vec::new() }
     }
 }
 
